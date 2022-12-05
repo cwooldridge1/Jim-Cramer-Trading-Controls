@@ -37,7 +37,6 @@ class IBApi(EWrapper, EClient):
     def buy(self)->None:
         """
         Create an executes a buy market order for the contract we are trading.
-        After buying it triggers the "SELL SELL SELL" sound
         """
         order = Order()
         order.action = "BUY"
@@ -50,7 +49,6 @@ class IBApi(EWrapper, EClient):
     def sell(self)->None:
         """
         Create an executes a sell market order for the contract we are trading.
-        After buying it triggers the "SELL SELL SELL" sound
         """
         order = Order()
         order.action = "SELL"
